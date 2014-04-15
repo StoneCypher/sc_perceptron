@@ -23,12 +23,12 @@ Perceptrons are simple aggregators: given a series of inputs, qualified each by 
 
 This is the basis of one simple kind of feed-forward neural network.
 
-[This may help](http://neuralnetworksanddeeplearning.com/chap1.html).
-
 
 
 Example
 -------
+
+For example, consider a perceptron with a threshhold of five, and weights of [6,2,2], given a series of different input sets.
 
 ```erlang
 1> c("sc_perceptron/src/sc_perceptron.erl").
@@ -43,6 +43,8 @@ Example
 4> sc_perceptron:result(5, [6,2,2], [1,0,0]).
 1
 ```
+
+[This may help](http://neuralnetworksanddeeplearning.com/chap1.html) in interpreting these results.
 
 
 
